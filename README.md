@@ -1,9 +1,5 @@
-# My Calculator Site
-Demo: https://my-react-calculator-site.netlify.app/
-
-## Описание
-
-Калькулятор, написанный на Vite, React, scss и TypeScript. Все вычисления написанный вручную, без eval и сторонних библиотек.
+# Video analytic
+Demo: https://video-analytic.netlify.app/
 
 ## Скрипты
 
