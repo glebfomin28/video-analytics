@@ -1,10 +1,10 @@
 import cn from 'classnames';
 import { formatTimestamp } from '@/shared/utils/format-timestamp';
+import { InfiniteList } from '@/shared/ui/infinite-list';
 
 import { isActiveTimestamp } from '../../../utils/is-active-timestamp/is-active-timestamp';
 import { AnalyticTimestampType } from '../../../model/types/analytic.type';
 import cls from './time-stamp-list.module.scss';
-import { InfiniteList } from '@/shared/ui/infinite-list';
 
 export const TimeStampList = ({
   timestamps = [],
@@ -21,7 +21,7 @@ export const TimeStampList = ({
 }) => {
   if (isError) {
     return (
-      <section className={cls.time_stamps}>
+      <section className={cn(cls.time_stamps, cls.centered)}>
         <p>Error</p>
       </section>
     );
@@ -29,7 +29,7 @@ export const TimeStampList = ({
 
   if (isLoading) {
     return (
-      <section className={cls.time_stamps}>
+      <section className={cn(cls.time_stamps, cls.centered)}>
         <p>Loading...</p>
       </section>
     );

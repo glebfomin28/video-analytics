@@ -8,9 +8,9 @@ import { useFetchAnalyticTimestamp } from '../../model/hooks/use-fetch-analytic-
 import cls from './analytic-video-player.module.scss';
 
 export const AnalyticVideoPlayer = () => {
-  const { data, loading, error } = useFetchAnalyticTimestamp();
   const videoRef = useRef<HTMLVideoElement>(null);
 
+  const { data, loading, error } = useFetchAnalyticTimestamp();
   const { currentTimestamp, setCurrentTimestamp, onUpdateTimestamp } = useAnalyticVideoPlayer(videoRef);
 
   return (

@@ -1,6 +1,7 @@
 import { forwardRef, ReactNode, RefObject } from 'react';
+
+import { useVideoPlayerControl } from '../../../model/hooks/use-video-player-control/use-video-player-control';
 import cls from './video-player.module.scss';
-import { useVideoPlayerControl } from '@/modules/analytic-video-player/model/hooks/use-video-player-control/use-video-player-control';
 
 export const VideoPlayer = forwardRef<
   HTMLVideoElement,
