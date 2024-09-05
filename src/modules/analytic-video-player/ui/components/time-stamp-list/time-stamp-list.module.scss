@@ -1,0 +1,24 @@
+.time_stamps {
+  position: relative;
+  box-sizing: border-box;
+  padding: 24px 0;
+  width: 134px;
+  max-width: 134px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgb(32, 32, 32);
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.time_stamp {
+  box-sizing: border-box;
+  padding: 8px 24px;
+  cursor: pointer;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.time_stamp_active {
+  color: #ffffff;
+}

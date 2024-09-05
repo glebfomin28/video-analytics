@@ -1,0 +1,39 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+*::-webkit-scrollbar {
+  box-sizing: content-box;
+  background-color: transparent;
+
+  width: 10px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track {
+  //background: transparent;
+  border-radius: 4px;
+  background-color: rgba(56, 53, 53, 0.87);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(149, 149, 149, 0.87);
+  border-radius: 4px;
+}
+
+* {
+  scroll-behavior: smooth;
+  scrollbar-width: auto;
+}
